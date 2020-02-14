@@ -1,8 +1,9 @@
-var question1_word="请问<br>是唐老鸭的女朋友<br>小黄鸭么？";
+var question1_word="请问<br>是唐老鸭的<br>小黄鸭么？";
 var question1=document.getElementById("question1");
 
 var boyfriend_yes=document.getElementById("boyfriend-yes");
 	boyfriend_no=document.getElementById("boyfriend-no");
+
 
 
 var word_code=0;
@@ -16,6 +17,7 @@ var timer=setInterval(function(){
 		console.log("stop");
 		boyfriend_yes.style.animationPlayState="running";
 		boyfriend_no.style.animationPlayState="running";
+		boyfriend_no.disabled="true";
 		clearInterval(timer);
 
 	}
