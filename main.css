@@ -8,7 +8,7 @@ html{
 }
 
 body{
-	background-color:#eee;
+	background-color:#fff;
 	font-size:12px;
 	line-height: 1;
 	font-family: "Microsoft YaHei","微软雅黑",SimSun,"Oxygen",Arial,"Hiragino Sans GB","STHeiti","WenQuanYi Micro Hei",sans-serif;
@@ -18,81 +18,9 @@ body{
 }
 
 .content{
-	overflow: hidden;
+	width:100%;
+/*	background-color:#eee;*/
+	position: relative;
+	padding:1rem 1rem 0rem;
 }
 
-span{
-	font-size:0.8rem;
-	line-height: 1.3;
-	position:absolute;
-	top:1rem;
-}
-
-/*.content{
-	margin:3rem auto 0;
-	text-align:center;
-	height:4rem;
-	overflow: hidden;
-	background-color:#fff;
-	position: absolute;
-	top:3rem;
-	text-align:left;
-}*/
-
-
-
-.btn-box{
-	position:absolute;
-	top:6rem;
-}
-
-.btn{
-	font-size:0.5rem;
-}
-
-/*.button{
-	border:1px solid;
-	
-	padding:6px 12px;
-
-	text-align:center;
-	vertical-align:middle;
-	line-height:1.43;
-	font-size:37px;
-	font-weight:400;
-	
-	color:#fff;
-	
-}*/
-
-#boyfriend-yes,#boyfriend-no{
-	
-	/*opacity: 0;*/  先显示动画再显示样式
-	animation:fadeOut 2s;
-	animation-timing-function:ease;
-	animation-play-state: paused;
-	
-}
-
-#boyfriend-yes{
-	margin-right:1.2rem;
-}
-
-#boyfriend-no{
-	
-	
-}
-
-@keyframes fadeOut{
-	0%   {opacity: 0}
-	/*25%  {opacity:0.25;}
-	50%  {opacity:0.5;}
-	75%  {opacity:0.75;}*/
-	100% {opacity:1;}
-}
-
-.content img{
-	width: 100%;
-	display: block;
-	margin:0 auto;
-}

@@ -10,54 +10,49 @@
 </head>
 
 <body>
-
-	<span id="question1"></span>
-
-	<div class="btn-box">
-		<button class="btn btn-success" id="boyfriend-yes">嗯哼，我是</button>
-		<button class="btn btn-warning" id="boyfriend-no">不是的</button>
+	<div class="content">
+		<span id="question1"></span>
+		<a class="btn btn-success" id="boyfriend-yes" href="./qs.html">嗯哼，我是</a>
+		<a class="btn btn-warning" id="boyfriend-no" href="./gaoci.html">不是的</a>
+		<a href=""></a>
 	</div>
+	
 	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
 	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="./main.js"></script>
 </body>
 <style type="text/css">
 
-	span{
+	#question1{
 		font-size:0.8rem;
 		line-height: 1.3;
-		position:absolute;
-		top:1rem;
-	}
-
-	.btn-box{
-		position:absolute;
-		top:6rem;
 	}
 
 	.btn{
-		font-size:0.5rem;
+		font-size:0.3rem;
 		padding:0.15rem 0.2rem;
 	}
 
 	#boyfriend-yes,#boyfriend-no{
+		position:absolute;
+		top:6rem;
 		/*opacity: 0;  先显示动画再显示样式*/
 		animation:fadeOut 5s;
 		animation-timing-function:ease;
 		animation-play-state: paused;
 	}
 
+	#boyfriend-yes{
+		left:1rem;
+	}
+
 	#boyfriend-no{
-		disabled:true;
+		right:1rem;
 	}
 
 	@keyframes fadeOut{
 		0%   {opacity:0;}
 		100% {opacity:1; color:#eee;}
-	}
-
-	#boyfriend-yes{
-		margin-right:1.2rem;
 	}
 
 	.shiyan{
