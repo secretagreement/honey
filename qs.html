@@ -12,18 +12,39 @@
 <body>
 	<div class="content">
 		<h2 id="title">timu</h2>
-		<div id="word"></div>
+		<div id="article"></div>
+		<a id="isee" href="./second.html">阅</a>
 	</div>
 	<style type="text/css">
-		h2{
+		#title{
 			text-align:center;
-			font-size:0.8rem;
-			line-height: 1.3;
-			margin:0px 0px 0.6rem;
+			font-size:0.5rem;
+			margin:0px 0px 0.2rem;
 		}
-		div{
-			font-size:0.3rem;
+		#article{
+			font-size:0.2rem;
 			line-height: 1.5;
+		}
+		#isee{
+			text-align: center;
+			color: #fff;
+			background-color: #5cb85c;
+			border-color: #4cae4c;
+			/*padding:0.15rem 0.4rem;*/
+			display: block;
+			width:1rem;
+			height:1rem;
+			line-height: 1rem;
+			margin:0.5rem auto;
+			border-radius:50%;
+			font-size:0.28rem;
+			animation:fadeOut 2s;
+			animation-timing-function: ease;
+			animation-play-state:paused;
+		}
+		@keyframes fadeOut{
+			0%{opacity: 0;}
+			100%{opacity: 1;}
 		}
 	</style>
 </body>

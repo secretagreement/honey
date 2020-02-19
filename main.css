@@ -5,22 +5,25 @@
 
 html{
 	font-size:100px;
+	height:100%;
 }
 
 body{
-	background-color:#fff;
+	height:100%;
+	max-width:6.4rem;
+	background-color:#eee;
 	font-size:12px;
 	line-height: 1;
 	font-family: "Microsoft YaHei","微软雅黑",SimSun,"Oxygen",Arial,"Hiragino Sans GB","STHeiti","WenQuanYi Micro Hei",sans-serif;
-	max-width:6.4rem;
 	margin:0 auto;
-	padding-bottom:1.04rem;
 }
 
 .content{
 	width:100%;
-/*	background-color:#eee;*/
+	height:100%;
+	background-color:#fff;
 	position: relative;
+	border:1px solid #eee;
 	padding:0.8rem 0.3rem 0rem;
 }
 
