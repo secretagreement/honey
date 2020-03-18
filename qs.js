@@ -10,8 +10,8 @@ console.log(div.innerHTML);
 
 var word_code=0;
 
-// var word_content=word.replace(/&#12288;/g," ");
-//innerHTML会显示标签，比如<br>等等,但不会显示空格，如&ngsp;
+// var word_content=word.replace(/&#12288;/g," "); 编辑器或者js 识别不了中文空格
+//innerHTML会显示标签，比如<br>等等，也会将英文空格直接显示  会把&#12288编译成中文空格
 // console.log(word_content);
 
 var timer=setInterval(function(){

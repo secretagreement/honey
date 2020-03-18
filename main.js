@@ -19,6 +19,5 @@ var timer=setInterval(function(){
 		boyfriend_no.style.animationPlayState="running";
 		boyfriend_no.disabled="true";
 		clearInterval(timer);
-
 	}
 },125)
