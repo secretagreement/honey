@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE-edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="./main.css">
+	<style>
+		 *{
+		 	margin:0;
+		 	padding:0;
+		 }
+		 #main{
+			position:relative;
+		 }
+		 .box{
+		 	width:50%;
+		 	float:left;
+		 	padding:15px 0 0 15px;
+		 }
+		 .pic{
+		 	padding:10px;
+		 	border:1px solid #ccc;
+		 	border-radius:5px;
+		 	box-shadow:0 0 5px #ccc;
+		 }
+		 img{
+		 	width:100%;
+		 }
+
+	</style>
+</head>
+<body>
+	<div class="content">
+		<div id="main">
+			<div class="box">
+				<div class="pic">
+					<img src="images/P_00.jpg">
+				</div>
+			</div>
+			<div class="box">
+				<div class="pic">
+					<img src="images/P_00.jpg">
+				</div>
+			</div>
+			<div class="box">
+				<div class="pic">
+					<img src="images/P_01.jpg">
+				</div>
+			</div>
+			<div class="box">
+				<div class="pic">
+					<img src="images/P_02.jpg">
+				</div>
+			</div>
+			<div class="box">
+				<div class="pic">
+					<img src="images/P_03.jpg">
+				</div>
+			</div>
+			<div class="box">
+				<div class="pic">
+					<img src="images/P_04.jpg">
+				</div>
+			</div>
+			<div class="box">
+				<div class="pic">
+					<img src="images/P_05.jpg">
+				</div>
+			</div>
+			<div class="box">
+				<div class="pic">
+					<img src="images/P_06.jpg">
+				</div>
+			</div>
+			<div class="box">
+				<div class="pic">
+					<img src="images/P_07.jpg">
+				</div>
+			</div>
+			<div class="box">
+				<div class="pic">
+					<img src="images/P_08.jpg">
+				</div>
+			</div>
+			<div class="box">
+				<div class="pic">
+					<img src="images/P_09.jpg">
+				</div>
+			</div>
+			<div class="box">
+				<div class="pic">
+					<img src="images/P_010.jpg">
+				</div>
+			</div>
+			<div class="box">
+				<div class="pic">
+					<img src="images/P_011.jpg">
+				</div>
+			</div>
+			<div class="box">
+				<div class="pic">
+					<img src="images/P_012.jpg">
+				</div>
+			</div>
+			<div class="box">
+				<div class="pic">
+					<img src="images/P_013.jpg">
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<script>
+	var hArr=[];
+	var box_list=document.getElementsByClassName('box');
+	for(var i=0;i<box_list.length;i++){
+		if(i<2){
+			hArr.push(box_list[i].offsetHeight);
+		}else if(hArr[0]<=hArr[1]){
+			box_list[i].style.position="absolute";
+			box_list[i].style.left="0";
+			box_list[i].style.top=hArr[0]+"px";
+			hArr[0]+=box_list[i].offsetHeight;
+		}else{
+			box_list[i].style.position="absolute";
+			box_list[i].style.left='50%';
+			box_list[i].style.top=hArr[1]+"px";
+			hArr[1]+=box_list[i].offsetHeight;
+		}
+	}
+
+</script>
+</html>
